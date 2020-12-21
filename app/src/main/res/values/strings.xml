@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SAMACHAAR HUB</string>
+    <string name="samachaar_hub">SAMACHAAR HUB</string>
+    <string name="science">SCIENCE</string>
+    <string name="sports">SPORTS</string>
+    <string name="top_headline">TOP HEADLINE</string>
+
+    <string name="string_corona">CORONA</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage"
+    tools:context=".Home_Page">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/g_bold"
+        android:text="@string/samachaar_hub"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/topHead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="topHeaddline"
+        android:padding="16dp"
+        android:text="@string/top_headline"
+        app:backgroundTint="#310D87"
+        app:layout_constraintLeft_toLeftOf="@id/guidelinev"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideh" />
+
+    <Button
+        android:id="@+id/Science"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="sciencePage"
+        android:padding="16dp"
+        android:text="@string/science"
+        app:backgroundTint="#C2185B"
+        app:layout_constraintLeft_toLeftOf="@id/guidelinev"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topHead" />
+
+    <Button
+        android:id="@+id/Sports"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="sportsPage"
+        android:padding="16dp"
+        android:text="@string/sports"
+        app:backgroundTint="#08490B"
+        app:layout_constraintLeft_toLeftOf="@id/guidelinev"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Science" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
